@@ -2,3 +2,7 @@
 .env
 /build
 /dist
+
+*/.env
+backend/.env
+client/.env
