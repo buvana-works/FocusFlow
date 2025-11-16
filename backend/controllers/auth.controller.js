@@ -1,15 +1,13 @@
-import express from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { UserModel } from "../models/User.js";
 import nodemailer from "nodemailer";
 import crypto from "crypto";
-import TodoModel from "../models/Todo.js"
 
 export const register = async (req, res) =>{
       try {
         const { username, email, password } = req.body;
-        console.log("username, email, password in req.body", username, email, password);
+        console.log("username, email, password in req.body", username, email, password); 
     
         const hashedPassword = await bcrypt.hash(password, 10);                              
     

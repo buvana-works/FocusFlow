@@ -7,7 +7,7 @@ import { FaSignOutAlt } from 'react-icons/fa';
 
 function Navbar({ token, onLogout }) {
   return (
-    <nav style={{ padding: "16px", background: "#6C63FF", color: "#fff", display: "flex", gap: "24px" }}>
+    <nav style={{ padding: "16px", background: "#007bff", color: "#fff", display: "flex", gap: "24px" }}>
         {token && (
         <div>
 

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import "./Login.css";
 
 function Signup({ onSignupSuccess }) {
   const [username, setUsername] = useState("");
@@ -24,25 +25,25 @@ function Signup({ onSignupSuccess }) {
   };
 
   return (
-    <form onSubmit={handleSignup}>
-      <h2>Sign Up</h2>
+    <form className="login-form" onSubmit={handleSignup}>
+      <h2 className="login-header">Sign Up</h2>
       <input
         type="text"
-        placeholder="Username"
+        placeholder="Enter Username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         required
       />
       <input
         type="email"
-        placeholder="Email"
+        placeholder="Enter Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
       />
       <input
         type="password"
-        placeholder="Password"
+        placeholder="Enter Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         required

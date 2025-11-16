@@ -412,7 +412,7 @@ return currentDate > dueDate;
             <th>Category</th>
             <th>Status</th>
             <th>Edit</th>
-            <th>Mark as Done</th>
+            <th>Mark</th>
             <th>Delete</th>
           </tr>
         </thead>

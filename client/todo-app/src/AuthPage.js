@@ -1,6 +1,7 @@
-import { useState } from "react"; 
+import { useState } from "react";
 import Login from "./Login";
 import Signup from "./SignUp";
+import "./AuthPage.css";
 
 const AuthPage = ({ setAuth }) => {
   const [activeTab, setActiveTab] = useState("login");
